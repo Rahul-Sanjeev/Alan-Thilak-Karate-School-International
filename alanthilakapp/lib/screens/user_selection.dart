@@ -1,3 +1,6 @@
+import 'package:alanthilakapp/screens/coach/login_coach.dart';
+import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/student/login_student.dart';
 import 'package:flutter/material.dart';
 
 class UserSelectionScreen extends StatelessWidget {
@@ -7,23 +10,34 @@ class UserSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: kscaffoldBGColor,
       body: Center(
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Text(
+                'Alan Thilak Karate School\t International',
+                style: TextStyle(
+                  fontSize: 30.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
               Container(
                 height: 200,
                 width: 200,
-                color: Colors.deepPurple,
+                color: Colors.white60,
                 child: TextButton(
                   onPressed: () {
                     // navigate to coach portal;
+                    Navigator.pushNamed(context, CoachLoginScreen.id);
                   },
                   child: const Text(
                     'Coach',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.black, fontSize: 30),
                   ),
                 ),
               ),
@@ -33,14 +47,15 @@ class UserSelectionScreen extends StatelessWidget {
               Container(
                 height: 200,
                 width: 200,
-                color: Colors.deepPurple,
+                color: Colors.white60,
                 child: TextButton(
                   onPressed: () {
                     // navigate to student portal;
+                    Navigator.pushNamed(context, StudentLoginScreen.id);
                   },
                   child: const Text(
                     'Student',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.black, fontSize: 30),
                   ),
                 ),
               ),

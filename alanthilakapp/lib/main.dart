@@ -1,5 +1,8 @@
+import 'package:alanthilakapp/screens/coach/login_coach.dart';
+import 'package:alanthilakapp/screens/coach/registration_coach.dart';
 import 'package:alanthilakapp/screens/home.dart';
 import 'package:alanthilakapp/screens/user_selection.dart';
+import 'package:alanthilakapp/screens/student/login_student.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,6 +26,10 @@ class MyApp extends StatelessWidget {
         // SplashScreen.id: (context) => SplashScreen(),
         UserSelectionScreen.id: (context) => const UserSelectionScreen(),
         HomeScreen.id: (context) => const HomeScreen(),
+        CoachLoginScreen.id: (context) => const CoachLoginScreen(),
+        CoachRegistrationScreen.id: (context) =>
+            const CoachRegistrationScreen(),
+        StudentLoginScreen.id: (context) => const StudentLoginScreen(),
       },
     );
   }

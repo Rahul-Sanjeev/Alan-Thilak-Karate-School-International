@@ -1,9 +1,9 @@
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-  static const id = 'home_screen';
+class CoachRegistrationScreen extends StatelessWidget {
+  const CoachRegistrationScreen({super.key});
+  static const id = 'coach_registration';
 
   @override
   Widget build(BuildContext context) {

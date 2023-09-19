@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/coach/registration_coach.dart';
 import 'package:flutter/material.dart';
 
 class CoachLoginScreen extends StatelessWidget {
@@ -27,7 +28,7 @@ class CoachLoginScreen extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: 'Email',
+                        hintText: 'Email or Mobile Number',
                       ),
                     ),
                   ),
@@ -58,13 +59,29 @@ class CoachLoginScreen extends StatelessWidget {
                   height: 50,
                   width: 350,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      // Navigate to Coach Home Screen;
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),
                     child: const Text(
                       'Login',
                       style: TextStyle(color: Colors.white),
                     ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 60,
+                ),
+                const Text('Not Registered?'),
+                TextButton(
+                  onPressed: () {
+                    // navigate to coach registeration page;
+                    Navigator.pushNamed(context, CoachRegistrationScreen.id);
+                  },
+                  child: const Text(
+                    'Register Now',
+                    style: TextStyle(color: Colors.blue),
                   ),
                 )
               ],

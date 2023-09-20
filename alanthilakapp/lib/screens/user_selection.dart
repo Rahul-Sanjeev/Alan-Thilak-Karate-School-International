@@ -65,18 +65,22 @@ class UserSelectionScreen extends StatelessWidget {
                 height: 60,
               ),
               const Text('To Join Our Team'),
-              Container(
+              SizedBox(
                 height: 50,
-                width: 150,
-                color: Colors.deepPurple,
-                child: TextButton(
+                width: 350,
+                child: ElevatedButton(
                   onPressed: () {
-                    // navigate to enquiry & apply page;
+                    // navigate to enquiry screen;
                     Navigator.pushNamed(context, EnquiryScreen.id);
                   },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurple),
                   child: const Text(
                     'Membership',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),

@@ -15,16 +15,32 @@ class EnquiryScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('Enquiry here!!!'),
+              const Text('About ATKSI'),
+              const Text('Our Instructors'),
+              const Text('Our Branches'),
+              const Text('Benefits'),
+              const Text('Achievments'),
               const SizedBox(
                 height: 30,
               ),
-              ElevatedButton(
-                onPressed: () {
-                  // navigate to joining form;
-                  Navigator.pushNamed(context, MembershipScreen.id);
-                },
-                child: const Text('Join Now'),
+              SizedBox(
+                height: 50,
+                width: 350,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // navigate to joining form screen;
+                    Navigator.pushNamed(context, MembershipScreen.id);
+                  },
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.deepPurple),
+                  child: const Text(
+                    'Join Now',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),

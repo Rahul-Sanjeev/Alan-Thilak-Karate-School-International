@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/coach/c_home.dart';
 import 'package:alanthilakapp/screens/coach/registration_coach.dart';
 import 'package:flutter/material.dart';
 
@@ -61,6 +62,7 @@ class CoachLoginScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigate to Coach Home Screen;
+                      Navigator.pushNamed(context, CoachHomeScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

@@ -1,4 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/student/registration_student.dart';
+import 'package:alanthilakapp/screens/student/s_home.dart';
 import 'package:flutter/material.dart';
 
 class StudentLoginScreen extends StatelessWidget {
@@ -16,6 +18,39 @@ class StudentLoginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const Text(
+                  'Alan Thilak Karate School\t International',
+                  style: TextStyle(
+                      color: Colors.black54,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                  'You Have Missed!',
+                  style: TextStyle(
+                      color: Colors.black38,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                  'Welcome Back',
+                  style: TextStyle(
+                      color: Colors.black26,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
@@ -60,12 +95,16 @@ class StudentLoginScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // navigate to student home screen;
+                      Navigator.pushNamed(context, StudentHomeScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),
                     child: const Text(
                       'Login',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                      ),
                     ),
                   ),
                 ),
@@ -75,7 +114,8 @@ class StudentLoginScreen extends StatelessWidget {
                 const Text('Not Registered?'),
                 TextButton(
                   onPressed: () {
-                    // navigate to coach registeration page;
+                    // navigate to student registeration page;
+                    Navigator.pushNamed(context, StudentRegistrationScreen.id);
                   },
                   child: const Text(
                     'Register Now',

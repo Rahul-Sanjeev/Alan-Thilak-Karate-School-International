@@ -34,6 +34,9 @@ class MembershipScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],

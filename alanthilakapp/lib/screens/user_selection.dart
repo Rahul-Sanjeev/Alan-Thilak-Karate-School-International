@@ -44,7 +44,11 @@ class UserSelectionScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 30,
+                height: 20,
+              ),
+              const Text('OR'),
+              const SizedBox(
+                height: 20,
               ),
               Container(
                 height: 200,
@@ -62,9 +66,21 @@ class UserSelectionScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 60,
+                height: 30,
               ),
-              const Text('To Join Our Team'),
+              const Text(
+                'Not A Member?',
+                style: TextStyle(fontSize: 18, color: Colors.red),
+              ),
+              const Text(
+                'To Join Our Team',
+                style: TextStyle(
+                  color: Colors.blueAccent,
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
               SizedBox(
                 height: 50,
                 width: 350,

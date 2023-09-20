@@ -1,7 +1,8 @@
+import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:alanthilakapp/screens/coach/c_home.dart';
 import 'package:alanthilakapp/screens/coach/login_coach.dart';
 import 'package:alanthilakapp/screens/coach/registration_coach.dart';
-import 'package:alanthilakapp/screens/home.dart';
+import 'package:alanthilakapp/screens/Membership/enquiry.dart';
 import 'package:alanthilakapp/screens/student/registration_student.dart';
 import 'package:alanthilakapp/screens/student/s_home.dart';
 import 'package:alanthilakapp/screens/user_selection.dart';
@@ -28,7 +29,6 @@ class MyApp extends StatelessWidget {
       routes: {
         // SplashScreen.id: (context) => SplashScreen(),
         UserSelectionScreen.id: (context) => const UserSelectionScreen(),
-        HomeScreen.id: (context) => const HomeScreen(),
         CoachLoginScreen.id: (context) => const CoachLoginScreen(),
         CoachRegistrationScreen.id: (context) =>
             const CoachRegistrationScreen(),
@@ -37,6 +37,8 @@ class MyApp extends StatelessWidget {
             const StudentRegistrationScreen(),
         CoachHomeScreen.id: (context) => const CoachHomeScreen(),
         StudentHomeScreen.id: (context) => const StudentHomeScreen(),
+        EnquiryScreen.id: (context) => const EnquiryScreen(),
+        MembershipScreen.id: (context) => const MembershipScreen(),
       },
     );
   }

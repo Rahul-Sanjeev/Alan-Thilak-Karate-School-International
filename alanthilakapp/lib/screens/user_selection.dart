@@ -1,3 +1,4 @@
+import 'package:alanthilakapp/screens/Membership/enquiry.dart';
 import 'package:alanthilakapp/screens/coach/login_coach.dart';
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/screens/student/login_student.dart';
@@ -19,8 +20,9 @@ class UserSelectionScreen extends StatelessWidget {
               const Text(
                 'Alan Thilak Karate School\t International',
                 style: TextStyle(
-                  fontSize: 30.0,
-                ),
+                    color: Colors.black54,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
@@ -70,6 +72,7 @@ class UserSelectionScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     // navigate to enquiry & apply page;
+                    Navigator.pushNamed(context, EnquiryScreen.id);
                   },
                   child: const Text(
                     'Membership',

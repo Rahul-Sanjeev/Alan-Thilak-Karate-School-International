@@ -1,4 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/coach/c_home.dart';
+import 'package:alanthilakapp/screens/coach/login_coach.dart';
 import 'package:flutter/material.dart';
 
 class CoachRegistrationScreen extends StatelessWidget {
@@ -8,7 +10,17 @@ class CoachRegistrationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
+      appBar: AppBar(
+        title: const Text('ATKSI'),
+        leading: IconButton(
+          onPressed: () {
+            // Navigate back to coach login page;
+            Navigator.pushNamed(context, CoachLoginScreen.id);
+          },
+          icon: const Icon(Icons.arrow_back_ios_new),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -19,7 +31,7 @@ class CoachRegistrationScreen extends StatelessWidget {
                 const Text(
                   'Alan Thilak Karate School\t International',
                   style: TextStyle(
-                      color: Colors.black54,
+                      color: kTextColor1,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -30,7 +42,7 @@ class CoachRegistrationScreen extends StatelessWidget {
                 const Text(
                   'Coach Registration',
                   style: TextStyle(
-                      color: Colors.black26,
+                      color: kTextColor3,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -193,6 +205,7 @@ class CoachRegistrationScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigate To Coach Home Screen;
+                      Navigator.pushNamed(context, CoachHomeScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

@@ -10,7 +10,7 @@ class CoachLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

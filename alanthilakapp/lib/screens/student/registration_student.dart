@@ -8,7 +8,7 @@ class StudentRegistrationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -19,7 +19,7 @@ class StudentRegistrationScreen extends StatelessWidget {
                 const Text(
                   'Alan Thilak Karate School\t International',
                   style: TextStyle(
-                      color: Colors.black54,
+                      color: kTextColor2,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -30,7 +30,7 @@ class StudentRegistrationScreen extends StatelessWidget {
                 const Text(
                   'Student Registration',
                   style: TextStyle(
-                      color: Colors.black26,
+                      color: kTextColor3,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,

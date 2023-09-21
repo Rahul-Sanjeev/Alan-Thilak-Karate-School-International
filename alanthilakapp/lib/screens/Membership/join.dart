@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/user_selection.dart';
 import 'package:flutter/material.dart';
 
 class MembershipScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class MembershipScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -36,25 +37,6 @@ class MembershipScreen extends StatelessWidget {
                 ),
                 const SizedBox(
                   height: 10,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    border: Border.all(color: Colors.white),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.only(left: 21),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'First Name',
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 12,
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -229,7 +211,8 @@ class MembershipScreen extends StatelessWidget {
                   width: 350,
                   child: ElevatedButton(
                     onPressed: () {
-                      // navigate to student home screen;
+                      // navigate to User Selection Screen;
+                      Navigator.pushNamed(context, UserSelectionScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

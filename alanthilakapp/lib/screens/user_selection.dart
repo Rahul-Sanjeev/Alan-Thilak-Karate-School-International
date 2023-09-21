@@ -11,7 +11,7 @@ class UserSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: Center(
         child: SafeArea(
           child: Column(
@@ -20,7 +20,7 @@ class UserSelectionScreen extends StatelessWidget {
               const Text(
                 'Alan Thilak Karate School\t International',
                 style: TextStyle(
-                    color: Colors.black54,
+                    color: kTextColor1,
                     fontSize: 30,
                     fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
@@ -31,7 +31,7 @@ class UserSelectionScreen extends StatelessWidget {
               Container(
                 height: 200,
                 width: 200,
-                color: Colors.white60,
+                color: kContainerColor,
                 child: TextButton(
                   onPressed: () {
                     // navigate to coach portal;
@@ -53,7 +53,7 @@ class UserSelectionScreen extends StatelessWidget {
               Container(
                 height: 200,
                 width: 200,
-                color: Colors.white60,
+                color: kContainerColor,
                 child: TextButton(
                   onPressed: () {
                     // navigate to student portal;
@@ -68,15 +68,26 @@ class UserSelectionScreen extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              const Text(
-                'Not A Member?',
-                style: TextStyle(fontSize: 18, color: Colors.red),
-              ),
-              const Text(
-                'To Join Our Team',
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Not A Member?',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: kTextColorRed,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Text(
+                    'Join Our Team',
+                    style: TextStyle(
+                      color: kTextColorBlue,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 15,

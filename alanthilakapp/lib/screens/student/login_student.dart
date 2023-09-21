@@ -10,7 +10,7 @@ class StudentLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -21,7 +21,7 @@ class StudentLoginScreen extends StatelessWidget {
                 const Text(
                   'Alan Thilak Karate School\t International',
                   style: TextStyle(
-                      color: Colors.black54,
+                      color: kTextColor1,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -32,7 +32,7 @@ class StudentLoginScreen extends StatelessWidget {
                 const Text(
                   'You Have Missed!',
                   style: TextStyle(
-                      color: Colors.black38,
+                      color: kTextColor2,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -43,7 +43,7 @@ class StudentLoginScreen extends StatelessWidget {
                 const Text(
                   'Welcome Back',
                   style: TextStyle(
-                      color: Colors.black26,
+                      color: kTextColor3,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -111,17 +111,26 @@ class StudentLoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 60,
                 ),
-                const Text('Not Registered?'),
-                TextButton(
-                  onPressed: () {
-                    // navigate to student registeration page;
-                    Navigator.pushNamed(context, StudentRegistrationScreen.id);
-                  },
-                  child: const Text(
-                    'Register Now',
-                    style: TextStyle(color: Colors.blue),
-                  ),
-                )
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'Not Registered?',
+                      style: TextStyle(color: kTextColorRed),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        // navigate to student registeration page;
+                        Navigator.pushNamed(
+                            context, StudentRegistrationScreen.id);
+                      },
+                      child: const Text(
+                        'Register Now',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    )
+                  ],
+                ),
               ],
             ),
           ),

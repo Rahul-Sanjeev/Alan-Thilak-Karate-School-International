@@ -9,7 +9,7 @@ class EnquiryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kscaffoldBGColor,
+      backgroundColor: kScaffoldBGColor,
       body: SafeArea(
         child: Center(
           child: Column(

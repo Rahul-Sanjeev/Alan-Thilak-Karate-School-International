@@ -12,13 +12,20 @@ class CoachRegistrationScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
       appBar: AppBar(
-        title: const Text('ATKSI'),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Coach Registration',
+          style: TextStyle(color: Colors.white),
+        ),
         leading: IconButton(
           onPressed: () {
             // Navigate back to coach login page;
-            Navigator.pushNamed(context, CoachLoginScreen.id);
+            Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(
+            Icons.arrow_back_ios_new,
+            color: Colors.white,
+          ),
         ),
       ),
       body: SafeArea(

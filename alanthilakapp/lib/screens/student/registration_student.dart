@@ -9,6 +9,14 @@ class StudentRegistrationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Student Registration',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

@@ -11,6 +11,14 @@ class CoachLoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Coach Login',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -18,6 +26,31 @@ class CoachLoginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                  'Welcome Back Coach',
+                  style: TextStyle(
+                      color: kTextColor1,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                  'You Have Missed!',
+                  style: TextStyle(
+                      color: kTextColor3,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[200],
@@ -75,7 +108,10 @@ class CoachLoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 60,
                 ),
-                const Text('Not Registered?'),
+                const Text(
+                  'Not Registered?',
+                  style: TextStyle(color: kTextColorRed, fontSize: 18),
+                ),
                 TextButton(
                   onPressed: () {
                     // navigate to coach registeration page;
@@ -83,7 +119,8 @@ class CoachLoginScreen extends StatelessWidget {
                   },
                   child: const Text(
                     'Register Now',
-                    style: TextStyle(color: Colors.blue),
+                    style: TextStyle(
+                        color: kTextColorBlue, fontWeight: FontWeight.bold),
                   ),
                 )
               ],

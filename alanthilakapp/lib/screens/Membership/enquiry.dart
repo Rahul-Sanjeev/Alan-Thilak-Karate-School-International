@@ -10,16 +10,39 @@ class EnquiryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Enquiry',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
       body: SafeArea(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('About ATKSI'),
-              const Text('Our Instructors'),
-              const Text('Our Branches'),
-              const Text('Benefits'),
-              const Text('Achievments'),
+              const Text(
+                'About ATKSI',
+                style: TextStyle(color: Colors.white),
+              ),
+              const Text(
+                'Our Instructors',
+                style: TextStyle(color: Colors.white),
+              ),
+              const Text(
+                'Our Branches',
+                style: TextStyle(color: Colors.white),
+              ),
+              const Text(
+                'Benefits',
+                style: TextStyle(color: Colors.white),
+              ),
+              const Text(
+                'Achievments',
+                style: TextStyle(color: Colors.white),
+              ),
               const SizedBox(
                 height: 30,
               ),

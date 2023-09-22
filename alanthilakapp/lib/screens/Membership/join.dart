@@ -9,6 +9,14 @@ class MembershipScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Joining Form',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -19,7 +27,7 @@ class MembershipScreen extends StatelessWidget {
                 const Text(
                   "You Are Joining India's Best Karate School",
                   style: TextStyle(
-                      color: Colors.black54,
+                      color: kTextColor1,
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -30,7 +38,7 @@ class MembershipScreen extends StatelessWidget {
                 const Text(
                   'Fill The Form\n We Will Contact You Soon',
                   style: TextStyle(
-                      color: Colors.black26,
+                      color: kTextColor3,
                       fontSize: 25,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
@@ -213,6 +221,7 @@ class MembershipScreen extends StatelessWidget {
                     onPressed: () {
                       // navigate to User Selection Screen;
                       Navigator.pushNamed(context, UserSelectionScreen.id);
+                      // change it to pop context;
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

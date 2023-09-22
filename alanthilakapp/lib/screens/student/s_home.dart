@@ -10,12 +10,17 @@ class StudentHomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kScaffoldBGColor,
       appBar: AppBar(
-        title: const Text('ATKSI'),
+        iconTheme: const IconThemeData(color: Colors.white),
+        backgroundColor: kAppBarColor,
+        title: const Text(
+          'Student Home',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       drawer: Drawer(
         child: ListView(
-          children: const [
-            DrawerHeader(
+          children: [
+            const DrawerHeader(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,17 +33,33 @@ class StudentHomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('P R O F I L E'),
-              leading: Icon(Icons.person),
+              title: const Text('P R O F I L E'),
+              leading: const Icon(Icons.person),
+              onTap: () {
+                // Nvaigate to student profile;
+              },
             ),
             ListTile(
-              title: Text('E V E N T S'),
-              leading: Icon(Icons.sports_martial_arts),
+              title: const Text('E V E N T S'),
+              leading: const Icon(Icons.sports_martial_arts),
+              onTap: () {
+                // navigate to events;
+              },
             ),
             ListTile(
-              title: Text('N O T I C E'),
-              leading: Icon(Icons.notification_add),
+              title: const Text('N O T I C E'),
+              leading: const Icon(Icons.notification_add),
+              onTap: () {
+                // navigate to notice;
+              },
             ),
+            ListTile(
+              title: const Text('L O G O U T'),
+              leading: const Icon(Icons.logout),
+              onTap: () {
+                // Navigate to Login screen;
+              },
+            )
           ],
         ),
       ),

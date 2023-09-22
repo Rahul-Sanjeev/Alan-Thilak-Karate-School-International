@@ -46,7 +46,10 @@ class UserSelectionScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const Text('OR'),
+              const Text(
+                'OR',
+                style: TextStyle(color: Colors.white),
+              ),
               const SizedBox(
                 height: 20,
               ),

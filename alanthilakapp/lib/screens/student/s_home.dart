@@ -1,4 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/coach/login_coach.dart';
+import 'package:alanthilakapp/screens/student/login_student.dart';
 import 'package:flutter/material.dart';
 
 class StudentHomeScreen extends StatelessWidget {
@@ -57,7 +59,10 @@ class StudentHomeScreen extends StatelessWidget {
               title: const Text('L O G O U T'),
               leading: const Icon(Icons.logout),
               onTap: () {
-                // Navigate to Login screen;
+                // Navigate to coach Login screen;
+                Navigator.of(context).popUntil(
+                  ModalRoute.withName(StudentLoginScreen.id),
+                );
               },
             )
           ],

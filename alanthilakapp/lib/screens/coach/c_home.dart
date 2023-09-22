@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/coach/login_coach.dart';
 import 'package:flutter/material.dart';
 
 class CoachHomeScreen extends StatelessWidget {
@@ -37,6 +38,9 @@ class CoachHomeScreen extends StatelessWidget {
               leading: const Icon(Icons.person),
               onTap: () {
                 // Nvaigate to coach profile;
+                Navigator.of(context).popUntil(
+                  ModalRoute.withName(CoachHomeScreen.id),
+                );
               },
             ),
             ListTile(
@@ -58,6 +62,9 @@ class CoachHomeScreen extends StatelessWidget {
               leading: const Icon(Icons.logout),
               onTap: () {
                 // Navigate to Login screen;
+                Navigator.of(context).popUntil(
+                  ModalRoute.withName(CoachLoginScreen.id),
+                );
               },
             )
           ],

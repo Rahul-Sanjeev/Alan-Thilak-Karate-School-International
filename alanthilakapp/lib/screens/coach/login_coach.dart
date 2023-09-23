@@ -1,6 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/coach/c_home.dart';
-import 'package:alanthilakapp/screens/coach/registration_coach.dart';
+import 'package:alanthilakapp/screens/Coach/c_home.dart';
+import 'package:alanthilakapp/screens/Coach/registration_coach.dart';
 import 'package:flutter/material.dart';
 
 class CoachLoginScreen extends StatelessWidget {

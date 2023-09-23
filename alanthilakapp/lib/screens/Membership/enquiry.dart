@@ -1,5 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/contants/styles.dart';
+import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class EnquiryScreen extends StatelessWidget {
         backgroundColor: kAppBarColor,
         title: const Text(
           'Enquiry',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: kThemeDataColor),
         ),
       ),
       body: SafeArea(
@@ -26,7 +27,10 @@ class EnquiryScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to about screen;
+                  Navigator.pushNamed(context, AboutScreen.id);
+                },
                 child: const Text(
                   'A B O U T',
                   style: kEnquryTxtStyle,

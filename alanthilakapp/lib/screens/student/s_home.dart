@@ -1,5 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/student/login_student.dart';
+import 'package:alanthilakapp/screens/Student/login_student.dart';
 import 'package:flutter/material.dart';
 
 class StudentHomeScreen extends StatelessWidget {

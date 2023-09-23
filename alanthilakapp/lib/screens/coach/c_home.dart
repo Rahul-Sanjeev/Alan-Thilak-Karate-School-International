@@ -1,5 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/coach/login_coach.dart';
+import 'package:alanthilakapp/screens/Coach/login_coach.dart';
 import 'package:flutter/material.dart';
 
 class CoachHomeScreen extends StatelessWidget {

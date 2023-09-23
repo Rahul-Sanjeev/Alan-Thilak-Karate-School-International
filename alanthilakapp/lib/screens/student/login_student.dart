@@ -1,6 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/student/registration_student.dart';
-import 'package:alanthilakapp/screens/student/s_home.dart';
+import 'package:alanthilakapp/screens/Student/registration_student.dart';
+import 'package:alanthilakapp/screens/Student/s_home.dart';
 import 'package:flutter/material.dart';
 
 class StudentLoginScreen extends StatelessWidget {

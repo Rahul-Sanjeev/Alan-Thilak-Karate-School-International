@@ -1,12 +1,13 @@
+import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
-import 'package:alanthilakapp/screens/coach/c_home.dart';
-import 'package:alanthilakapp/screens/coach/login_coach.dart';
-import 'package:alanthilakapp/screens/coach/registration_coach.dart';
+import 'package:alanthilakapp/screens/Coach/c_home.dart';
+import 'package:alanthilakapp/screens/Coach/login_coach.dart';
+import 'package:alanthilakapp/screens/Coach/registration_coach.dart';
 import 'package:alanthilakapp/screens/Membership/enquiry.dart';
-import 'package:alanthilakapp/screens/student/registration_student.dart';
-import 'package:alanthilakapp/screens/student/s_home.dart';
+import 'package:alanthilakapp/screens/Student/registration_student.dart';
+import 'package:alanthilakapp/screens/Student/s_home.dart';
 import 'package:alanthilakapp/screens/user_selection.dart';
-import 'package:alanthilakapp/screens/student/login_student.dart';
+import 'package:alanthilakapp/screens/Student/login_student.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,16 +30,22 @@ class MyApp extends StatelessWidget {
       routes: {
         // SplashScreen.id: (context) => SplashScreen(),
         UserSelectionScreen.id: (context) => const UserSelectionScreen(),
+
         CoachLoginScreen.id: (context) => const CoachLoginScreen(),
         CoachRegistrationScreen.id: (context) =>
             const CoachRegistrationScreen(),
+
         StudentLoginScreen.id: (context) => const StudentLoginScreen(),
         StudentRegistrationScreen.id: (context) =>
             const StudentRegistrationScreen(),
+
         CoachHomeScreen.id: (context) => const CoachHomeScreen(),
         StudentHomeScreen.id: (context) => const StudentHomeScreen(),
+
         EnquiryScreen.id: (context) => const EnquiryScreen(),
         MembershipScreen.id: (context) => const MembershipScreen(),
+
+        AboutScreen.id: (context) => const AboutScreen(),
       },
     );
   }

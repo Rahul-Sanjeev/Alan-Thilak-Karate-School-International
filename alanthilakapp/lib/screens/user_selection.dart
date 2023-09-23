@@ -1,7 +1,7 @@
 import 'package:alanthilakapp/screens/Membership/enquiry.dart';
-import 'package:alanthilakapp/screens/coach/login_coach.dart';
+import 'package:alanthilakapp/screens/Coach/login_coach.dart';
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/student/login_student.dart';
+import 'package:alanthilakapp/screens/Student/login_student.dart';
 import 'package:flutter/material.dart';
 
 class UserSelectionScreen extends StatelessWidget {

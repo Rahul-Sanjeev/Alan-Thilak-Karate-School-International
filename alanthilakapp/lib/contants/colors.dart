@@ -14,3 +14,5 @@ const Color kTextColorRed = Colors.redAccent;
 const Color kContainerColor = Colors.white60;
 
 const Color kAppBarColor = Color.fromARGB(177, 32, 40, 101);
+
+const Color kThemeDataColor = Colors.white;

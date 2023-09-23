@@ -22,29 +22,57 @@ class EnquiryScreen extends StatelessWidget {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Text(
-                'About ATKSI',
-                style: TextStyle(color: Colors.white),
-              ),
-              const Text(
-                'Our Instructors',
-                style: TextStyle(color: Colors.white),
-              ),
-              const Text(
-                'Our Branches',
-                style: TextStyle(color: Colors.white),
-              ),
-              const Text(
-                'Benefits',
-                style: TextStyle(color: Colors.white),
-              ),
-              const Text(
-                'Achievments',
-                style: TextStyle(color: Colors.white),
+                'A B O U T',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                height: 30,
+                height: 50,
+              ),
+              const Text(
+                'I N S T R U T O R S',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const Text(
+                'B R A N C H E S',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const Text(
+                'B E N E F I T S',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const Text(
+                'A C H I E V M E N T S',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 50,
               ),
               SizedBox(
                 height: 50,

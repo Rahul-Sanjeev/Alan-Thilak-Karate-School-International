@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/screens/student/login_student.dart';
 import 'package:alanthilakapp/screens/student/s_home.dart';
 import 'package:flutter/material.dart';
 
@@ -200,8 +201,8 @@ class StudentRegistrationScreen extends StatelessWidget {
                   width: 350,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigate To Student Home Screen;
-                      Navigator.pushNamed(context, StudentHomeScreen.id);
+                      // Navigate To Student login Screen;
+                      Navigator.pushNamed(context, StudentLoginScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

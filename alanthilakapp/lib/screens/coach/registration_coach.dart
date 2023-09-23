@@ -211,8 +211,8 @@ class CoachRegistrationScreen extends StatelessWidget {
                   width: 350,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigate To Coach Home Screen;
-                      Navigator.pushNamed(context, CoachHomeScreen.id);
+                      // Navigate To Coach Login Screen;
+                      Navigator.pushNamed(context, CoachLoginScreen.id);
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

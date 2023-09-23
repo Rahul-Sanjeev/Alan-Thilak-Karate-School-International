@@ -220,7 +220,9 @@ class MembershipScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // navigate to User Selection Screen;
-                      Navigator.pushNamed(context, UserSelectionScreen.id);
+                      Navigator.of(context).popUntil(
+                        ModalRoute.withName(UserSelectionScreen.id),
+                      );
                       // change it to pop context;
                     },
                     style: ElevatedButton.styleFrom(

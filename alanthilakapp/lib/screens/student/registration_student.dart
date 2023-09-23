@@ -202,7 +202,9 @@ class StudentRegistrationScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigate To Student login Screen;
-                      Navigator.pushNamed(context, StudentLoginScreen.id);
+                      Navigator.of(context).popUntil(
+                        ModalRoute.withName(StudentLoginScreen.id),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

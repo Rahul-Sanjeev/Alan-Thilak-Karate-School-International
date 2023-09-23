@@ -212,7 +212,9 @@ class CoachRegistrationScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       // Navigate To Coach Login Screen;
-                      Navigator.pushNamed(context, CoachLoginScreen.id);
+                      Navigator.of(context).popUntil(
+                        ModalRoute.withName(CoachLoginScreen.id),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepPurple),

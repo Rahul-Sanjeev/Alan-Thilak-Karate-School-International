@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/contants/colors.dart';
+import 'package:alanthilakapp/contants/styles.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:flutter/material.dart';
 
@@ -24,52 +25,52 @@ class EnquiryScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
-                'A B O U T',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21,
-                    fontWeight: FontWeight.bold),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'A B O U T',
+                  style: kEnquryTxtStyle,
+                ),
               ),
               const SizedBox(
                 height: 50,
               ),
-              const Text(
-                'I N S T R U T O R S',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21,
-                    fontWeight: FontWeight.bold),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'I N S T R U T O R S',
+                  style: kEnquryTxtStyle,
+                ),
               ),
               const SizedBox(
                 height: 50,
               ),
-              const Text(
-                'B R A N C H E S',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21,
-                    fontWeight: FontWeight.bold),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'B R A N C H E S',
+                  style: kEnquryTxtStyle,
+                ),
               ),
               const SizedBox(
                 height: 50,
               ),
-              const Text(
-                'B E N E F I T S',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21,
-                    fontWeight: FontWeight.bold),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'B E N E F I T S',
+                  style: kEnquryTxtStyle,
+                ),
               ),
               const SizedBox(
                 height: 50,
               ),
-              const Text(
-                'A C H I E V M E N T S',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 21,
-                    fontWeight: FontWeight.bold),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'A C H I E V M E N T S',
+                  style: kEnquryTxtStyle,
+                ),
               ),
               const SizedBox(
                 height: 50,

@@ -1,5 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/contants/styles.dart';
+import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +41,10 @@ class EnquiryScreen extends StatelessWidget {
                 height: 50,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to instroctors screen;
+                  Navigator.pushNamed(context, InstructorsScreen.id);
+                },
                 child: const Text(
                   'I N S T R U T O R S',
                   style: kEnquryTxtStyle,
@@ -50,7 +54,9 @@ class EnquiryScreen extends StatelessWidget {
                 height: 50,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to branches screen;
+                },
                 child: const Text(
                   'B R A N C H E S',
                   style: kEnquryTxtStyle,
@@ -60,7 +66,9 @@ class EnquiryScreen extends StatelessWidget {
                 height: 50,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to benefits screen;
+                },
                 child: const Text(
                   'B E N E F I T S',
                   style: kEnquryTxtStyle,
@@ -70,9 +78,11 @@ class EnquiryScreen extends StatelessWidget {
                 height: 50,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  // navigate to achievement screen;
+                },
                 child: const Text(
-                  'A C H I E V M E N T S',
+                  'A C H I E V E M E N T S',
                   style: kEnquryTxtStyle,
                 ),
               ),

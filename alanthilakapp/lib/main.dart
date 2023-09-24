@@ -1,3 +1,4 @@
+import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:alanthilakapp/screens/Coach/c_home.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         MembershipScreen.id: (context) => const MembershipScreen(),
 
         AboutScreen.id: (context) => const AboutScreen(),
+        InstructorsScreen.id: (context) => const InstructorsScreen(),
       },
     );
   }

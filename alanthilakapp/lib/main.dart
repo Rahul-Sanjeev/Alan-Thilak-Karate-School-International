@@ -1,5 +1,8 @@
 import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
+import 'package:alanthilakapp/screens/Enquiry/achievements.dart';
+import 'package:alanthilakapp/screens/Enquiry/benefits.dart';
+import 'package:alanthilakapp/screens/Enquiry/branches.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:alanthilakapp/screens/Coach/c_home.dart';
 import 'package:alanthilakapp/screens/Coach/login_coach.dart';
@@ -32,22 +35,30 @@ class MyApp extends StatelessWidget {
         // SplashScreen.id: (context) => SplashScreen(),
         UserSelectionScreen.id: (context) => const UserSelectionScreen(),
 
+        // LOGIN SCREENS;
         CoachLoginScreen.id: (context) => const CoachLoginScreen(),
+        StudentLoginScreen.id: (context) => const StudentLoginScreen(),
+
+        // REGISTRATION SCREENS;
         CoachRegistrationScreen.id: (context) =>
             const CoachRegistrationScreen(),
-
-        StudentLoginScreen.id: (context) => const StudentLoginScreen(),
         StudentRegistrationScreen.id: (context) =>
             const StudentRegistrationScreen(),
 
+        // HOME SCREENS;
         CoachHomeScreen.id: (context) => const CoachHomeScreen(),
         StudentHomeScreen.id: (context) => const StudentHomeScreen(),
 
+        // NEW JOINING SCREENS;
         EnquiryScreen.id: (context) => const EnquiryScreen(),
         MembershipScreen.id: (context) => const MembershipScreen(),
 
+        // ENQUIRY SCREENS;
         AboutScreen.id: (context) => const AboutScreen(),
         InstructorsScreen.id: (context) => const InstructorsScreen(),
+        BranchesScreen.id: (context) => const BranchesScreen(),
+        BenefitsScreen.id: (context) => const BenefitsScreen(),
+        AchievementsScreen.id: (context) => const AchievementsScreen(),
       },
     );
   }

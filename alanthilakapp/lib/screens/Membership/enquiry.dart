@@ -2,6 +2,9 @@ import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/contants/styles.dart';
 import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
+import 'package:alanthilakapp/screens/Enquiry/achievements.dart';
+import 'package:alanthilakapp/screens/Enquiry/benefits.dart';
+import 'package:alanthilakapp/screens/Enquiry/branches.dart';
 import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:flutter/material.dart';
 
@@ -56,6 +59,7 @@ class EnquiryScreen extends StatelessWidget {
               TextButton(
                 onPressed: () {
                   // navigate to branches screen;
+                  Navigator.pushNamed(context, BranchesScreen.id);
                 },
                 child: const Text(
                   'B R A N C H E S',
@@ -68,6 +72,7 @@ class EnquiryScreen extends StatelessWidget {
               TextButton(
                 onPressed: () {
                   // navigate to benefits screen;
+                  Navigator.pushNamed(context, BenefitsScreen.id);
                 },
                 child: const Text(
                   'B E N E F I T S',
@@ -80,6 +85,7 @@ class EnquiryScreen extends StatelessWidget {
               TextButton(
                 onPressed: () {
                   // navigate to achievement screen;
+                  Navigator.pushNamed(context, AchievementsScreen.id);
                 },
                 child: const Text(
                   'A C H I E V E M E N T S',

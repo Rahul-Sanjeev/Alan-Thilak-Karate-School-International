@@ -44,12 +44,15 @@ class InstructorsScreen extends StatelessWidget {
                         padding: EdgeInsets.all(8.0),
                         child: Column(
                           children: [
-                            Text(
-                              'NIEL MOSES THILAK',
-                              style: kNameTxtStyle,
+                            Padding(
+                              padding: EdgeInsets.only(left: 9),
+                              child: Text(
+                                'NIEL MOSES THILAK',
+                                style: kNameTxtStyle,
+                              ),
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 12,
                             ),
                             Text(
                               'TECHNICAL DIRECTOR',
@@ -98,7 +101,7 @@ class InstructorsScreen extends StatelessWidget {
                               style: kNameTxtStyle,
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 12,
                             ),
                             Text(
                               'TECHNICAL DIRECTOR',
@@ -144,7 +147,7 @@ class InstructorsScreen extends StatelessWidget {
                               style: kNameTxtStyle,
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 12,
                             ),
                             Text(
                               'CHIEF INSTRUCTOR',
@@ -189,7 +192,7 @@ class InstructorsScreen extends StatelessWidget {
                               style: kNameTxtStyle,
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 12,
                             ),
                             Text(
                               'INSTRUTROR',
@@ -234,7 +237,7 @@ class InstructorsScreen extends StatelessWidget {
                               style: kNameTxtStyle,
                             ),
                             SizedBox(
-                              height: 10,
+                              height: 12,
                             ),
                             Text(
                               'INSTRUCTOR',
@@ -252,6 +255,9 @@ class InstructorsScreen extends StatelessWidget {
                     'INSTRUCTOR AT ALAN THILAK KARATE SCHOOL UDINUR BRANCH, KERALA STATE PLAYER & MEDALIST',
                   ),
                 ),
+                SizedBox(
+                  height: 12,
+                )
               ],
             ),
           ),

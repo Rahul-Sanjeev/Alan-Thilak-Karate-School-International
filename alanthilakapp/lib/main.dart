@@ -1,16 +1,16 @@
+import 'package:alanthilakapp/main_login.dart';
 import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Enquiry/achievements.dart';
 import 'package:alanthilakapp/screens/Enquiry/benefits.dart';
 import 'package:alanthilakapp/screens/Enquiry/branches.dart';
-import 'package:alanthilakapp/screens/Membership/join.dart';
+import 'package:alanthilakapp/screens/Know%20More/join.dart';
 import 'package:alanthilakapp/screens/Coach/c_home.dart';
 import 'package:alanthilakapp/screens/Coach/login_coach.dart';
 import 'package:alanthilakapp/screens/Coach/registration_coach.dart';
-import 'package:alanthilakapp/screens/Membership/enquiry.dart';
+import 'package:alanthilakapp/screens/Know%20More/know_us.dart';
 import 'package:alanthilakapp/screens/Student/registration_student.dart';
 import 'package:alanthilakapp/screens/Student/s_home.dart';
-import 'package:alanthilakapp/screens/user_selection.dart';
 import 'package:alanthilakapp/screens/Student/login_student.dart';
 import 'package:flutter/material.dart';
 
@@ -30,14 +30,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: UserSelectionScreen.id,
+      initialRoute: MainLoginScreen.id,
       routes: {
-        // SplashScreen.id: (context) => SplashScreen(),
-        UserSelectionScreen.id: (context) => const UserSelectionScreen(),
+        MainLoginScreen.id: (context) => const MainLoginScreen(),
 
         // LOGIN SCREENS;
         CoachLoginScreen.id: (context) => const CoachLoginScreen(),
-        StudentLoginScreen.id: (context) => const StudentLoginScreen(),
+        StudentLoginScreen.id: (context) => StudentLoginScreen(),
 
         // REGISTRATION SCREENS;
         CoachRegistrationScreen.id: (context) =>
@@ -50,7 +49,7 @@ class MyApp extends StatelessWidget {
         StudentHomeScreen.id: (context) => const StudentHomeScreen(),
 
         // NEW JOINING SCREENS;
-        EnquiryScreen.id: (context) => const EnquiryScreen(),
+        KnowUs.id: (context) => const KnowUs(),
         MembershipScreen.id: (context) => const MembershipScreen(),
 
         // ENQUIRY SCREENS;

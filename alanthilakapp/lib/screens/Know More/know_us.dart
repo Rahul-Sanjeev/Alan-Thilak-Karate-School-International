@@ -5,12 +5,11 @@ import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Enquiry/achievements.dart';
 import 'package:alanthilakapp/screens/Enquiry/benefits.dart';
 import 'package:alanthilakapp/screens/Enquiry/branches.dart';
-import 'package:alanthilakapp/screens/Membership/join.dart';
 import 'package:flutter/material.dart';
 
-class EnquiryScreen extends StatelessWidget {
-  const EnquiryScreen({super.key});
-  static const id = 'enuiry_screen';
+class KnowUs extends StatelessWidget {
+  const KnowUs({super.key});
+  static const id = 'knowus_screen';
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class EnquiryScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Enquiry',
+          'K N O W   U S',
           style: TextStyle(color: kThemeDataColor),
         ),
       ),
@@ -30,6 +29,15 @@ class EnquiryScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              const Image(
+                height: 230,
+                image: AssetImage(
+                  '/Users/rahulsanjeev/flutter_projects/alanthilakapp/images/atksi_logo.png',
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
               TextButton(
                 onPressed: () {
                   // navigate to about screen;
@@ -95,25 +103,31 @@ class EnquiryScreen extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              SizedBox(
-                height: 50,
-                width: 350,
-                child: ElevatedButton(
-                  onPressed: () {
-                    // navigate to joining form screen;
-                    Navigator.pushNamed(context, MembershipScreen.id);
-                  },
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple),
-                  child: const Text(
-                    'Join Now',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ),
-                ),
-              ),
+              //
+              //
+              /// the below elevated is temporarly Unavailable;
+              //
+              //
+
+              // SizedBox(
+              //   height: 50,
+              //   width: 350,
+              //   child: ElevatedButton(
+              //     onPressed: () {
+              //    // navigate to joining form screen;
+              //       Navigator.pushNamed(context, MembershipScreen.id);
+              //     },
+              //     style: ElevatedButton.styleFrom(
+              //         backgroundColor: Colors.deepPurple),
+              //     child: const Text(
+              //       'Join Now',
+              //       style: TextStyle(
+              //         color: Colors.white,
+              //         fontSize: 20,
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),

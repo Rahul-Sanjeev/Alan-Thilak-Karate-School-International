@@ -15,7 +15,7 @@ class CoachLoginScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Coach Login',
+          'L O G I N',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -29,27 +29,28 @@ class CoachLoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
+                const Image(
+                  height: 300,
+                  image: AssetImage(
+                      '/Users/rahulsanjeev/flutter_projects/alanthilakapp/images/atksi_logo.png'),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
                 const Text(
                   'Welcome Back Coach',
                   style: TextStyle(
-                      color: kTextColor1,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
+                    color: kTextColor2,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
-                  'You Have Missed!',
-                  style: TextStyle(
-                      color: kTextColor3,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
                 const SizedBox(
-                  height: 30,
+                  height: 6,
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -101,12 +102,12 @@ class CoachLoginScreen extends StatelessWidget {
                         backgroundColor: Colors.deepPurple),
                     child: const Text(
                       'Login',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 60,
+                  height: 30,
                 ),
                 const Text(
                   'Not Registered?',

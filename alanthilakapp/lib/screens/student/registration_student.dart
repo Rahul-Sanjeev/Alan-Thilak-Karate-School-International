@@ -1,11 +1,11 @@
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/screens/Student/login_student.dart';
-import 'package:alanthilakapp/screens/Student/s_home.dart';
 import 'package:flutter/material.dart';
 
 class StudentRegistrationScreen extends StatelessWidget {
   const StudentRegistrationScreen({super.key});
   static const id = 'student_regisration';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +14,7 @@ class StudentRegistrationScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Student Registration',
+          'R E G I S T R A T I O N',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -25,19 +25,16 @@ class StudentRegistrationScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'Alan Thilak Karate School\t International',
-                  style: TextStyle(
-                      color: kTextColor2,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
+                const Image(
+                  height: 200,
+                  image: AssetImage(
+                      '/Users/rahulsanjeev/flutter_projects/alanthilakapp/images/atksi_logo.png'),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 const Text(
-                  'Student Registration',
+                  'Registration',
                   style: TextStyle(
                       color: kTextColor3,
                       fontSize: 30,

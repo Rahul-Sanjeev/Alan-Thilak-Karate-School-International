@@ -1,5 +1,4 @@
 import 'package:alanthilakapp/contants/colors.dart';
-import 'package:alanthilakapp/screens/Coach/c_home.dart';
 import 'package:alanthilakapp/screens/Coach/login_coach.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,7 @@ class CoachRegistrationScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Coach Registration',
+          'R E G I S T  R A T I O N',
           style: TextStyle(color: Colors.white),
         ),
         leading: IconButton(
@@ -35,13 +34,11 @@ class CoachRegistrationScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'Alan Thilak Karate School\t International',
-                  style: TextStyle(
-                      color: kTextColor1,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
+                const Image(
+                  height: 200,
+                  image: AssetImage(
+                    '/Users/rahulsanjeev/flutter_projects/alanthilakapp/images/atksi_logo.png',
+                  ),
                 ),
                 const SizedBox(
                   height: 30,

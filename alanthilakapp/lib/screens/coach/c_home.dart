@@ -14,7 +14,7 @@ class CoachHomeScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Coach Home',
+          'Student Home',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -37,36 +37,42 @@ class CoachHomeScreen extends StatelessWidget {
               title: const Text('P R O F I L E'),
               leading: const Icon(Icons.person),
               onTap: () {
-                // Nvaigate to coach profile;
-                Navigator.of(context).popUntil(
-                  ModalRoute.withName(CoachHomeScreen.id),
-                );
-              },
-            ),
-            ListTile(
-              title: const Text('E V E N T S'),
-              leading: const Icon(Icons.sports_martial_arts),
-              onTap: () {
-                // navigate to events;
-              },
-            ),
-            ListTile(
-              title: const Text('N O T I C E'),
-              leading: const Icon(Icons.notification_add),
-              onTap: () {
-                // navigate to notice;
+                // Nvaigate to student profile;
               },
             ),
             ListTile(
               title: const Text('L O G O U T'),
               leading: const Icon(Icons.logout),
               onTap: () {
-                // Navigate to Login screen;
+                // Navigate to coach Login screen;
                 Navigator.of(context).popUntil(
                   ModalRoute.withName(CoachLoginScreen.id),
                 );
               },
             )
+          ],
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                // Nvaigate to events;
+              },
+              child: const Text('E V E N T S'),
+            ),
+            const SizedBox(
+              height: 60,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Nvaigate to notice;
+              },
+              child: const Text('N O T I C E'),
+            ),
           ],
         ),
       ),

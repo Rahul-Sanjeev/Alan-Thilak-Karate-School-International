@@ -41,20 +41,6 @@ class StudentHomeScreen extends StatelessWidget {
               },
             ),
             ListTile(
-              title: const Text('E V E N T S'),
-              leading: const Icon(Icons.sports_martial_arts),
-              onTap: () {
-                // navigate to events;
-              },
-            ),
-            ListTile(
-              title: const Text('N O T I C E'),
-              leading: const Icon(Icons.notification_add),
-              onTap: () {
-                // navigate to notice;
-              },
-            ),
-            ListTile(
               title: const Text('L O G O U T'),
               leading: const Icon(Icons.logout),
               onTap: () {
@@ -64,6 +50,29 @@ class StudentHomeScreen extends StatelessWidget {
                 );
               },
             )
+          ],
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                // Nvaigate to events;
+              },
+              child: const Text('E V E N T S'),
+            ),
+            const SizedBox(
+              height: 60,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Nvaigate to notice;
+              },
+              child: const Text('N O T I C E'),
+            ),
           ],
         ),
       ),

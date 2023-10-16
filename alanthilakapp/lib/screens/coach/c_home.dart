@@ -1,5 +1,6 @@
 import 'package:alanthilakapp/contants/colors.dart';
 import 'package:alanthilakapp/screens/Coach/login_coach.dart';
+import 'package:alanthilakapp/screens/Dashboard/events.dart';
 import 'package:flutter/material.dart';
 
 class CoachHomeScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class CoachHomeScreen extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: kAppBarColor,
         title: const Text(
-          'Student Home',
+          'Coach Home',
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -37,7 +38,7 @@ class CoachHomeScreen extends StatelessWidget {
               title: const Text('P R O F I L E'),
               leading: const Icon(Icons.person),
               onTap: () {
-                // Nvaigate to student profile;
+                // Nvaigate to Coach profile;
               },
             ),
             ListTile(
@@ -58,20 +59,29 @@ class CoachHomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ElevatedButton(
-              onPressed: () {
-                // Nvaigate to events;
-              },
-              child: const Text('E V E N T S'),
+            SizedBox(
+              height: 60,
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Nvaigate to events;
+                  Navigator.pushNamed(context, EventsScreen.id);
+                },
+                child: const Text('+ADD  EVENTS'),
+              ),
             ),
             const SizedBox(
               height: 60,
             ),
-            ElevatedButton(
-              onPressed: () {
-                // Nvaigate to notice;
-              },
-              child: const Text('N O T I C E'),
+            SizedBox(
+              height: 60,
+              width: 200,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Nvaigate to notice;
+                },
+                child: const Text('+ADD NOTICE'),
+              ),
             ),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:alanthilakapp/main_login.dart';
+import 'package:alanthilakapp/screens/Dashboard/events.dart';
 import 'package:alanthilakapp/screens/Enquiry/Instructors.dart';
 import 'package:alanthilakapp/screens/Enquiry/about.dart';
 import 'package:alanthilakapp/screens/Enquiry/achievements.dart';
@@ -58,6 +59,9 @@ class MyApp extends StatelessWidget {
         BranchesScreen.id: (context) => const BranchesScreen(),
         BenefitsScreen.id: (context) => const BenefitsScreen(),
         AchievementsScreen.id: (context) => const AchievementsScreen(),
+
+        // EVENTS SCREEN;
+        EventsScreen.id: (context) => EventsScreen(),
       },
     );
   }

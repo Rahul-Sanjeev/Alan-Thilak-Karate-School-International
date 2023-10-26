@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class EventsScreen extends StatefulWidget {
-  EventsScreen({super.key});
+  const EventsScreen({super.key});
   static const id = 'events_screen';
 
   @override
